@@ -7,7 +7,10 @@ import com.conference.exceptions.InvalidTalkException;
 public class ConferenceMain {
 	public static void main(String[] args) {
 
-		String fileName = "input";
+		String fileName = null;
+		if(args.length!=0){
+			fileName=args[0];
+		}
 		ConferenceManager conferenceManager = new ConferenceManager(new ConferenceInput());
 		try {
 			conferenceManager.scheduleConference(fileName);
