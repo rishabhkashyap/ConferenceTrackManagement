@@ -12,7 +12,7 @@ public  class Talk implements Comparable<Talk>{
     String title;
     String name;
     int timeDuration;
-    boolean scheduled = false;
+    boolean scheduled ;
     String scheduledTime;
     
     /**
@@ -25,6 +25,7 @@ public  class Talk implements Comparable<Talk>{
         this.title = title;
         this.name = name;
         this.timeDuration = time;
+        this.scheduled=false;
     }
     
     /**
